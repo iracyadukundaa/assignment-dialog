@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dialog Modal</title>
+    <link rel="stylesheet" href="sagaga.css">
+    
+</head>
+<body>
+    
+    <dialog id="dialog">
+
+        <form method="dialog" id="avatar-container">
+
+            <div class="card">
+                <section class="card--head">
+                    <ion-icon name="person-add-outline"></ion-icon>
+                    <p>New User</p>
+                    <button class="card--head-close_dialog">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </section>
+                <section class="card--body">
+                    <div class="card--body--file">
+                        <label for="userimage">Upload an image</label>
+                        <input id="userimage" type="file" accept=".jpg, .jpeg, .png" name="userimage">
+                    </div>
+                    <p class="card--body--max_upload">* Maximum upload 1mb</p>
+                </section>
+                <section class="card--footer">
+                    <button class="card--footer-clear_btn">Clear</button>
+                    <div class="card--footer-menu">
+                        <button class="card--footer-cancel_btn">Cancel</button>
+                        <button type="submit" id="confirmBtn" class="card--footer-cancel_confirm">Confirm</button>
+                    </div>
+                </section>
+            </div>
+
+        </form>
+
+    </dialog>
+
+    <!-- <dialog id="minidialog">
+        <p>Dummy Text</p>
+    </dialog> -->
+
+    <button id="add_new_avatar" type="button" class="avatar-button avatar-button__add-new">+</button>
+
+    <output></output>
+
+    <script type="text/javascript" src="./sagaga.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
